@@ -1,0 +1,56 @@
+        *{
+            margin:0;
+            padding:0;
+            font-family:serif;
+        }
+        ol{
+            list-style-type:none;
+            padding:0;
+            width:100%;
+        }
+        .input-group{
+            width:100%;
+            border:1px solid purple;
+            box-shadow:0 0 3px purple;
+            border-radius:5px;
+            padding:15px;
+        }
+        input[type="text"]{
+            text-transform:capitalize;
+            width:95%;
+        }
+        input{
+            border:none;
+            outline:none;
+        }
+        /* input[type="date"]::-webkit-datetime-edit{
+            display:none;
+        } */
+        li{            
+            background-color:lightsalmon;
+            border-radius:5px;
+            color:black;
+            padding:5px;            
+            /* box-sizing: content-box; */
+            text-transform:capitalize;
+            /* list-style-position:inside; */
+            display:flex;
+            justify-content:space-between;
+            outline:none;
+            box-shadow:none;
+            font-size:1.3rem;
+        }
+        .form-control:focus{
+            box-shadow:none;
+        }
+    .input-section{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        
+    }
+    .todo-list{
+        height:60vh;
+        overflow-y: auto;
+    }
