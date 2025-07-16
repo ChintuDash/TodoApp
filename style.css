@@ -17,11 +17,14 @@
         }
         input[type="text"]{
             text-transform:capitalize;
-            width:95%;
+            border:1px solid red;
+        }
+        input[type="date"]{
+            border:1px solid red;
         }
         input{
-            border:none;
-            outline:none;
+           height:50px;
+           font-size:1.5rem;
         }
         /* input[type="date"]::-webkit-datetime-edit{
             display:none;
@@ -43,6 +46,10 @@
         .form-control:focus{
             box-shadow:none;
         }
+        .btn{
+            height:50px;
+            font-size:1.5rem;
+        }
     .input-section{
         display:flex;
         align-items:center;
@@ -53,4 +60,23 @@
     .todo-list{
         height:60vh;
         overflow-y: auto;
+    }
+
+    @media (max-width:480px){
+        input{
+            margin-bottom:10px;
+            height:50px;
+        }
+        .input-group{
+            padding:20px 0;
+        }
+    }
+    @media (min-width:481px) and (max-width:1024px){
+        input{
+            margin-bottom:10px;
+            height:50px;
+        }
+          .input-group{
+            padding:25px 0;
+        }
     }
