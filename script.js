@@ -11,7 +11,7 @@
 
             let list=document.createElement("li");
             list.textContent=item;
-            list.classList="mt-1 px-2"
+            list.classList="mt-1 px-2 position-relative"
 
             let span=document.createElement("span");
             span.textContent=itemdate;
@@ -21,7 +21,7 @@
 
             let del=document.createElement("button");
             del.textContent="✕";
-            del.classList="btn btn-lg text-dark py-0 px-2"
+            del.classList="btn btn-lg text-primary fw-bold  p-0 position-absolute top-0 start-100 translate-middle"
             del.onclick=()=>list.remove();
             list.appendChild(del);           
                     

@@ -6,6 +6,7 @@
         ol{
             list-style-type:none;
             padding:0;
+            padding-top:10px;
             width:100%;
         }
         .input-group{
@@ -38,17 +39,19 @@
             text-transform:capitalize;
             /* list-style-position:inside; */
             display:flex;
-            justify-content:space-between;
+            justify-content:space-around;
             outline:none;
             box-shadow:none;
             font-size:1.3rem;
+            width:95%;
         }
+      
         .form-control:focus{
             box-shadow:none;
         }
         .btn{
             height:50px;
-            font-size:1.5rem;
+            font-size:1.5rem;            
         }
     .input-section{
         display:flex;
@@ -70,6 +73,13 @@
         .input-group{
             padding:20px 0;
         }
+        li{           
+            flex-direction:column;
+        }
+         input[type="date"]{
+            color:black;
+         }
+     
     }
     @media (min-width:481px) and (max-width:1024px){
         input{
