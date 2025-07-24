@@ -7,7 +7,7 @@
             if(item === '' && itemdate === ''){
                 alert("Enter an Item..");
                 return;
-            }
+            }else{
 
             let list=document.createElement("li");
             list.textContent=item;
@@ -21,12 +21,13 @@
 
             let del=document.createElement("button");
             del.textContent="✕";
-            del.classList="btn btn-lg text-primary fw-bold  p-0 position-absolute top-0 start-100 translate-middle"
+            del.classList="btn btn-lg text-primary fw-bold  p-0 position-absolute top-50 end-0 translate-middle-y"
             del.onclick=()=>list.remove();
             list.appendChild(del);           
                     
 
             input.value='';
             inputdate.value='';
+            };
           
         }
